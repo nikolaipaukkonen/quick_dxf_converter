@@ -6,4 +6,4 @@ Initially **11201**: begin polyline, **91201** or **81201**: end polyline. Every
 
 More features to be added later on.
 
-Requires [ezdxf and r12writer](https://ezdxf.readthedocs.io/en/master/index.html) to work.
+Requires [ezdxf and r12writer](https://github.com/mozman/ezdxf) to work.
