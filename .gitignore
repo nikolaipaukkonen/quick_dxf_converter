@@ -1,2 +1,5 @@
 *.gt
 *.dxf
+*.spec
+dist/
+build/
