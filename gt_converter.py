@@ -30,7 +30,7 @@ def draw_dxf(filename, data_list):
             if line_number == "0":
                 dxf.add_point(coord, layer=current_layer)
                 if polyline_3d:
-                    print("Lisätty 1", polyline_3d)
+                    print("Lisätty polyline", polyline_3d)
                     dxf.add_polyline(polyline_3d, layer=last_layer)
                     polyline_3d = []
                 
@@ -39,7 +39,7 @@ def draw_dxf(filename, data_list):
             else: 
                 if line_number != last_linenumber or current_layer != last_layer:
                     if polyline_3d:
-                        print("Lisätty 2", polyline_3d)
+                        print("Lisätty polyline", polyline_3d)
                         dxf.add_polyline(polyline_3d, layer=last_layer)
                         polyline_3d = []
                     polyline_3d.append(coord)

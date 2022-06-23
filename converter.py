@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import ezdxf
 from ezdxf.addons import r12writer
 import sys
@@ -29,6 +31,6 @@ with r12writer(sys.argv[2]) as dxf:
         elif line[4] == "11201":
             polyline_3d.append((float(line[1]), float(line[2]), float(line[3])))
         else:
-            dxf.add_point((float(line[1]), float(line[2]), float(line[3])))
+            dxf.add_point((float(line[1]), float(line[2]), float(line[3])), layer=line[4])
 
-    dxf.add_text(sys.argv[2], align="MIDDLE_CENTER") #prints filename, just texting
+    dxf.add_text(sys.argv[2], align="MIDDLE_CENTER") #prints filename, just testing
