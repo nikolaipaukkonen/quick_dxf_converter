@@ -1,5 +1,8 @@
 *.gt
 *.dxf
 *.spec
+*.txt
+*.TXT
+*.DXF
 dist/
 build/
