@@ -10,5 +10,7 @@ More features to be added later on.
 ## gt file converter
 Newer version intended for .gt format files. Use through cli. 
 
+Currently does not work with files with larger than 8 character input for code or point number.
+
 ## dependencies
 Requires [ezdxf and r12writer](https://github.com/mozman/ezdxf) to work. Installable through pip etc.
