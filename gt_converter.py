@@ -10,7 +10,10 @@ def create_list(filename):
         indices = [8,16,24,32,46,60]
         for line in f:
             code = [line[i:j] for i,j in zip(indices, indices[1:]+[None])]
-            data_list.append(code)
+            code_stripped = []
+            for s in code:
+                code_stripped.append(s.strip())
+            data_list.append(code_stripped)
 # line  layer   point   x               y               z
 # 1     KIVI    10053   6707532.603     23447574.210    14.892
 
