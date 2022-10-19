@@ -7,8 +7,9 @@ import sys
 def create_list(filename):
     with open(filename) as f:
         data_list = []
+        indices = [8,16,24,32,46,60]
         for line in f:
-            code = line.split()
+            code = [line[i:j] for i,j in zip(indices, indices[1:]+[None])]
             data_list.append(code)
 # line  layer   point   x               y               z
 # 1     KIVI    10053   6707532.603     23447574.210    14.892
